@@ -2,6 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class EmergencyGUI extends JFrame {
+    // UI Components
     private final JTextField nameField;
     private final JTextField locationField;
     private final JComboBox<String> emergencyTypeCombo;
@@ -10,20 +11,27 @@ public class EmergencyGUI extends JFrame {
     private final JTextArea reminderArea;
 
     public EmergencyGUI() {
-        
+        // Frame settings
         setTitle("PASPAS: Emergency Assistance System");
-        setSize(750, 420);
+        setSize(750, 430);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        
-        JLabel titleLabel = new JLabel("===== P A S P A S =====", JLabel.CENTER);
+        // Set window icon
+        ImageIcon icon = new ImageIcon("C:\\Users\\OOP PROJ\\Emergency Assistance System\\images\\logo.png"); // Replace with your icon file's path
+        setIconImage(icon.getImage());
+
+        // Set background color to a calming light blue
+        getContentPane().setBackground(new Color(173, 216, 230));
+
+        // Title Label
+        JLabel titleLabel = new JLabel("P A S P A S", JLabel.CENTER);
         titleLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
         titleLabel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
 
-        
-        nameField = new JTextField(10); 
-        locationField = new JTextField(10); 
+        // Input fields and combo box
+        nameField = new JTextField(10);
+        locationField = new JTextField(10);
 
         emergencyTypeCombo = new JComboBox<>();
         emergencyTypeCombo.addItem("Select Emergency Type");
@@ -33,20 +41,27 @@ public class EmergencyGUI extends JFrame {
         emergencyTypeCombo.addItem("Medical");
         emergencyTypeCombo.addItem("Crime");
 
+        // Text areas
         additionalInfoArea = new JTextArea(2, 15);
-
-        JButton submitButton = new JButton("Send Request");
-        JButton clearButton = new JButton("Clear");
+        additionalInfoArea.setBackground(Color.WHITE);
 
         resultArea = new JTextArea(3, 30);
         resultArea.setEditable(false);
         resultArea.setBorder(BorderFactory.createTitledBorder("Response"));
+        resultArea.setBackground(Color.WHITE);
 
         reminderArea = new JTextArea(3, 30);
         reminderArea.setEditable(false);
         reminderArea.setBorder(BorderFactory.createTitledBorder("Emergency Reminder"));
+        reminderArea.setBackground(Color.WHITE);
 
+        // Buttons
+        JButton submitButton = new JButton("Send Request");
+        JButton clearButton = new JButton("Clear");
+
+        // Input section
         JPanel inputPanel = new JPanel(new GridLayout(4, 2, 5, 5));
+        inputPanel.setBackground(new Color(173, 216, 230));
         inputPanel.add(new JLabel("Name:"));
         inputPanel.add(nameField);
         inputPanel.add(new JLabel("Location:"));
@@ -56,14 +71,19 @@ public class EmergencyGUI extends JFrame {
         inputPanel.add(new JLabel("Additional Information:"));
         inputPanel.add(new JScrollPane(additionalInfoArea));
 
+        // Button section
         JPanel buttonPanel = new JPanel();
+        buttonPanel.setBackground(new Color(173, 216, 230));
         buttonPanel.add(submitButton);
         buttonPanel.add(clearButton);
 
+        // Response section
         JPanel responsePanel = new JPanel(new GridLayout(2, 1));
+        responsePanel.setBackground(new Color(173, 216, 230));
         responsePanel.add(resultArea);
         responsePanel.add(reminderArea);
 
+        // Main layout
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.add(inputPanel, BorderLayout.NORTH);
         mainPanel.add(buttonPanel, BorderLayout.CENTER);
@@ -73,6 +93,7 @@ public class EmergencyGUI extends JFrame {
         add(titleLabel, BorderLayout.NORTH);
         add(mainPanel, BorderLayout.CENTER);
 
+        // Button actions
         submitButton.addActionListener(e -> handleEmergency());
         clearButton.addActionListener(e -> clearFields());
     }
@@ -83,27 +104,25 @@ public class EmergencyGUI extends JFrame {
         String emergencyType = (String) emergencyTypeCombo.getSelectedItem();
         String additionalInfo = additionalInfoArea.getText().trim();
         Emergency emergency = null;
-
+    
+        // Validate inputs separately
         if (name.isEmpty() && location.isEmpty()) {
-            resultArea.setText("Please enter your name and location to assist you.");
-            reminderArea.setText("");
+            JOptionPane.showMessageDialog(this, "Please enter your name and location to assist you.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (name.isEmpty()) {
-            resultArea.setText("Please enter your name to assist you.");
-            reminderArea.setText("");
+            JOptionPane.showMessageDialog(this, "Please enter your name to assist you.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return;
         } else if (location.isEmpty()) {
-            resultArea.setText("Please enter your location to assist you.");
-            reminderArea.setText("");
+            JOptionPane.showMessageDialog(this, "Please enter your location to assist you.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
+    
         if (emergencyType.equals("Select Emergency Type")) {
-            resultArea.setText("Please select a valid emergency type.");
-            reminderArea.setText("");
+            JOptionPane.showMessageDialog(this, "Please select a valid emergency type.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
+    
+        // Instantiate the appropriate emergency class
         switch (emergencyType) {
             case "Flood" -> emergency = new FloodEmergency(name, location);
             case "Fire" -> emergency = new FireEmergency(name, location);
@@ -111,10 +130,48 @@ public class EmergencyGUI extends JFrame {
             case "Medical" -> emergency = new MedicalEmergency(name, location);
             case "Crime" -> emergency = new CrimeEmergency(name, location);
         }
+    
+        // Confirm details
+        int confirm = JOptionPane.showConfirmDialog(this,
+                "Are these details correct?\n\nName: " + name + "\nLocation: " + location +
+                        "\nEmergency Type: " + emergencyType + "\nAdditional Info: " + additionalInfo,
+                "Confirm Details", JOptionPane.YES_NO_OPTION);
+    
+        if (confirm == JOptionPane.YES_OPTION) {
+            displayProcessingDialog(emergency, additionalInfo);
+        }
+    }
+    
 
+    private void displayProcessingDialog(Emergency emergency, String additionalInfo) {
+        JDialog dialog = new JDialog(this, "Processing", true);
+        JLabel label = new JLabel("Confirming details...", JLabel.CENTER);
+        dialog.add(label, BorderLayout.CENTER);
+        dialog.setSize(300, 150);
+        dialog.setLocationRelativeTo(this);
+
+        Timer timer1 = new Timer(2000, e -> {
+            label.setText("Tracking location...");
+            ((Timer) e.getSource()).stop();
+
+            Timer timer2 = new Timer(2000, e2 -> {
+                dialog.dispose();
+                showResponse(emergency, additionalInfo);
+                ((Timer) e2.getSource()).stop();
+            });
+            timer2.setRepeats(false);
+            timer2.start();
+        });
+        timer1.setRepeats(false);
+        timer1.start();
+
+        dialog.setVisible(true);
+    }
+
+    private void showResponse(Emergency emergency, String additionalInfo) {
         if (emergency != null) {
             resultArea.setText(emergency.handleEmergency() + "\nEstimated response time: 15 minutes. Please stay calm and await assistance.\nAdditional Info: " + additionalInfo);
-            reminderArea.setText( emergency.reminder());
+            reminderArea.setText(emergency.reminder());
         }
     }
 
