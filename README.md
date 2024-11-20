@@ -44,11 +44,10 @@ The Emergency.java class ensures that all emergency types follow a consistent st
      These subclasses extend the Emergency class, each representing a distinct type of emergency. Below is an overview of what each subclass does:
      
 * CrimeEmergency.java: Handles crime-related emergencies (e.g., theft or assault).
+-Implements the handleEmergency() method to simulate notifying law enforcement.
+ Provides safety reminders, such as staying calm and avoiding confrontation.
 
-  Implements the handleEmergency() method to simulate notifying law enforcement.
-  Provides safety reminders, such as staying calm and avoiding confrontation.
-
-*FireEmergency.java: Manages fire-related situations.
+* FireEmergency.java: Manages fire-related situations.
      Simulates connecting the user to the fire department and provides fire safety instructions.
      Offers reminders on how to stay safe during a fire, such as evacuating and avoiding smoke inhalation.
      
