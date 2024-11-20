@@ -16,21 +16,25 @@ Encapsulation is used to bundle the system's data (attributes like name, locatio
 
  -> **Inheritance**
 
-   Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
+ Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
 
 -> **Abstraction**
-     Abstraction simplifies the interface and hides the complex logic of handling different types of emergencies. The Emergency class defines an abstract handleEmergency() method, which each subclass implements according to the specifics of the emergency. This allows the system to interact with all emergencies using a uniform interface, without needing to understand the details of each emergency type.
+
+Abstraction simplifies the interface and hides the complex logic of handling different types of emergencies. The Emergency class defines an abstract handleEmergency() method, which each subclass implements according to the specifics of the emergency. This allows the system to interact with all emergencies using a uniform interface, without needing to understand the details of each emergency type.
 
 -> **Polymorphism**
-     Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (example: "Flood"), the system creates an instance of the corresponding subclass (FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
+
+Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (example: "Flood"), the system creates an instance of the corresponding subclass (FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
 
 
  **FILE DESCRIPTION**
+ 
  -> Emergency.java
-     This is the base class that establishes the common structure for all emergency types. It contains shared attributes such as the user's name and location. Additionally, it defines two abstract methods:
-     handleEmergency(): This method is implemented by subclasses to provide customized responses for each specific emergency type.
-     reminder(): This method offers tailored reminders or safety precautions relevant to the emergency type.
-     The Emergency.java class ensures that all emergency types follow a consistent structure while allowing each subclass to implement specific behavior for their type of emergency.
+This is the base class that establishes the common structure for all emergency types. It contains shared attributes such as the user's name and location. Additionally, it defines two abstract methods:
+
+handleEmergency(): This method is implemented by subclasses to provide customized responses for each specific emergency type.
+reminder(): This method offers tailored reminders or safety precautions relevant to the emergency type.
+The Emergency.java class ensures that all emergency types follow a consistent structure while allowing each subclass to implement specific behavior for their type of emergency.
 
 -> Subclasses (CrimeEmergency.java, FireEmergency.java, FloodEmergency.java, MedicalEmergency.java, EarthquakeEmergency.java)
      These subclasses extend the Emergency class, each representing a distinct type of emergency. Below is an overview of what each subclass does:
