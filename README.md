@@ -98,11 +98,11 @@ These subclasses extend the Emergency class, each representing a distinct type o
 
 * *CrimeEmergency.java*:
 
-- Handles crime-related emergencies (e.g., theft or assault).
+     - Handles crime-related emergencies (e.g., theft or assault).
 
-- Implements the handleEmergency() method to simulate notifying law enforcement.
+     - Implements the handleEmergency() method to simulate notifying law enforcement.
 
-- Provides safety reminders, such as staying calm and avoiding confrontation.
+     - Provides safety reminders, such as staying calm and avoiding confrontation.
      
 
 * *FireEmergency.java*:
