@@ -16,7 +16,7 @@ The PASPAS Emergency Assistance System utilizes the core Object-Oriented Program
  -> **Inheritance**
      Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
 
-> **Abstraction**
+-> **Abstraction**
      Abstraction simplifies the interface and hides the complex logic of handling different types of emergencies. The Emergency class defines an abstract handleEmergency() method, which each subclass implements according to the specifics of the emergency. This allows the system to interact with all emergencies using a uniform interface, without needing to understand the details of each emergency type.
 
 -> **Polymorphism**
@@ -124,17 +124,22 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
      A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
 
 IV. INSTRUCTION FOR RUNNING THE PROGRAM
-     1. Download the Project: Clone or download the PASPAS files.
-     2. Install Java: Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
-     3. Set Up the Project:
+1. Download the Project: Clone or download the PASPAS files.
+     
+2. Install Java: Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
+    
+3. Set Up the Project:
      Open the PASPAS folder in your preferred Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code.
      Make sure the Java files are properly imported and recognized by your IDE.
-     4.Compile the Program:
+
+4.Compile the Program:
      Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
-     5.Run the Program:
+     
+5.Run the Program:
      In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
      The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
-     6.Interacting with the Program:
+     
+6.Interacting with the Program:
      Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
      Enter your name, location, and any additional information.
      Click "Submit" to trigger the emergency response.
