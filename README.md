@@ -3,8 +3,10 @@
 I. **PROJECT OVERVIEW**
      
 PASPAS: Emergency Response System is a Java-based application, specifically designed to provide crucial support to individuals amid emergencies. This system connects users to important resources with remarkable speed and efficiency. It empowers users to report a wide array of emergencies, including natural disasters like floods and earthquakes, urgent incidents, fiery blazes, and criminal activities. When users report an emergency, they are promted to provide essential details, such as their name, exact location, and comprehensive description of the situation at hand.    
-     In today's world, especially in our country Philippines, we are experiencing severe calamities, disasters, and crimes or tragedies that cause panic and fear among people. PASPAS is built to address this pressing issue by offering quick assistance during such stressfull moments. This system is created to lessen the stress and confusion often associated with seeking help in crises, particularly for individuals who may be feling panicked or unsure about where to turn for assistance. It effectively addresses commmon challenge of not knowing which emergency hotline to dial, streamlining their path to receiving the help they need without unnecessary delays. 
-     PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the raoid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
+     
+In today's world, especially in our country Philippines, we are experiencing severe calamities, disasters, and crimes or tragedies that cause panic and fear among people. PASPAS is built to address this pressing issue by offering quick assistance during such stressfull moments. This system is created to lessen the stress and confusion often associated with seeking help in crises, particularly for individuals who may be feling panicked or unsure about where to turn for assistance. It effectively addresses commmon challenge of not knowing which emergency hotline to dial, streamlining their path to receiving the help they need without unnecessary delays. 
+
+PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the raoid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
 
 II. **APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
 
@@ -16,7 +18,7 @@ Encapsulation is used to bundle the system's data (attributes like name, locatio
 
  -> **Inheritance**
 
- Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
+Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
 
 -> **Abstraction**
 
@@ -33,15 +35,18 @@ Polymorphism enables the same method to behave differently depending on the obje
 This is the base class that establishes the common structure for all emergency types. It contains shared attributes such as the user's name and location. Additionally, it defines two abstract methods:
 
 handleEmergency(): This method is implemented by subclasses to provide customized responses for each specific emergency type.
+
 reminder(): This method offers tailored reminders or safety precautions relevant to the emergency type.
+
 The Emergency.java class ensures that all emergency types follow a consistent structure while allowing each subclass to implement specific behavior for their type of emergency.
 
 -> Subclasses (CrimeEmergency.java, FireEmergency.java, FloodEmergency.java, MedicalEmergency.java, EarthquakeEmergency.java)
      These subclasses extend the Emergency class, each representing a distinct type of emergency. Below is an overview of what each subclass does:
      
 * CrimeEmergency.java: Handles crime-related emergencies (e.g., theft or assault).
-     Implements the handleEmergency() method to simulate notifying law enforcement.
-     Provides safety reminders, such as staying calm and avoiding confrontation.
+
+  Implements the handleEmergency() method to simulate notifying law enforcement.
+  Provides safety reminders, such as staying calm and avoiding confrontation.
 
 *FireEmergency.java: Manages fire-related situations.
      Simulates connecting the user to the fire department and provides fire safety instructions.
