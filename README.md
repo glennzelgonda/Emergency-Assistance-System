@@ -46,35 +46,38 @@ A major challenge in emergencies is making sure everyone can access help, regard
 
 # **IV. INSTRUCTION FOR RUNNING THE PROGRAM**
 1. *Download the Project*:
- Clone or download the PASPAS files.
+ 
+ - Clone or download the PASPAS files.
 
 2. *Install Java*:
- Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
+ 
+ - Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
 
 3. *Set Up the Project*:
- Open the PASPAS folder in your preferred Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code.
+ 
+-  Open the PASPAS folder in your preferred Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code.
 
- Make sure the Java files are properly imported and recognized by your IDE.
+ - Make sure the Java files are properly imported and recognized by your IDE.
 
 4. *Compile the Program*:
 
- Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
+ - Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
 
 5. *Run the Program*:
 
- In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
+ - In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
 
- The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
+ - The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
 
 6. *Interacting with the Program*:
 
-   1.Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
+   - Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
 
-   2.Enter your name, location, and any additional information.
+   - Enter your name, location, and any additional information.
 
-   3.Click "Submit" to trigger the emergency response.
+   - Click "Submit" to trigger the emergency response.
 
-   4.The system will simulate tracking the user's location and provide emergency-specific reminders.
+   - The system will simulate tracking the user's location and provide emergency-specific reminders.
 
 # **FILE DESCRIPTION**
 
