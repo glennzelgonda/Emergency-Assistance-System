@@ -107,38 +107,39 @@ These subclasses extend the Emergency class, each representing a distinct type o
 
 * *FireEmergency.java*:
 
-- Manages fire-related situations.
+     - Manages fire-related situations.
 
-- Simulates connecting the user to the fire department and provides fire safety instructions.
+     - Simulates connecting the user to the fire department and provides fire safety instructions.
 
-- Offers reminders on how to stay safe during a fire, such as evacuating and avoiding smoke inhalation.
+     - Offers reminders on how to stay safe during a fire, such as evacuating and avoiding smoke inhalation.
      
 * *FloodEmergency.java*:
 
-- Handles flood-related emergencies.
+     - Handles flood-related emergencies.
 
-- Provides reminders like seeking higher ground and avoiding floodwaters.
+     - Provides reminders like seeking higher ground and avoiding floodwaters.
 
-- Implements flood-specific safety messages and actions.
+     - Implements flood-specific safety messages and actions.
      
 
 * *MedicalEmergency.java*:
-- Focuses on medical emergencies (e.g., accidents, heart attacks).
 
-- Provides calming messages and emphasizes the need to give responders clear and concise information.
+     - Focuses on medical emergencies (e.g., accidents, heart attacks).
 
-- Offers tips on how to assist medical responders upon arrival.
+     - Provides calming messages and emphasizes the need to give responders clear and concise information.
+
+     - Offers tips on how to assist medical responders upon arrival.
      
 
 * *EarthquakeEmergency.java*:
 
-- Manages earthquake-related emergencies.
+     - Manages earthquake-related emergencies.
 
-- Includes reminders about techniques like drop, cover, and hold.
+     - Includes reminders about techniques like drop, cover, and hold.
 
-- Advises users to stay away from windows and unsafe structures during and after an earthquake.
+     - Advises users to stay away from windows and unsafe structures during and after an earthquake.
 
-- Each subclass ensures that users receive relevant, emergency-specific guidance, enhancing both the system’s realism and usability.
+     - Each subclass ensures that users receive relevant, emergency-specific guidance, enhancing both the system’s realism and usability.
     
 ->*EmergencyGUI.java*
 
@@ -178,9 +179,9 @@ These subclasses extend the Emergency class, each representing a distinct type o
 
 - If the name or location fields are empty, an error message prompts the user to fill in the necessary information:
 
-*"Please enter your name to assist you."*
+     *"Please enter your name to assist you."*
 
-*"Please enter your location to assist you."*
+     *"Please enter your location to assist you."*
 
 If both fields are empty: 
 
@@ -198,11 +199,11 @@ If both fields are empty:
 
 - A timer simulates the progression of steps, such as:
 
-*"Confirming details..."*
+     *"Confirming details..."*
 
-*"Tracking location..."*
+     *"Tracking location..."*
 
-*"Location confirmed. Help is on the way."*
+     *"Location confirmed. Help is on the way."*
      
 -> *Display Results*:
 
