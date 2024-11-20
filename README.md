@@ -7,7 +7,8 @@ PASPAS: Emergency Response System is a Java-based application, specifically desi
      PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the raoid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
 
 II. **APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
-     The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
+
+The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
 
  -> **Encapsulation**
      Encapsulation is used to bundle the system's data (attributes like name, location, emergency type) and the methods (functions like handling emergencies) together within classes. This approach hides the internal complexities of the system from external components, which improves the maintainability and security of the system. For example, the Emergency class encapsulates the common properties of all emergency types, providing methods to interact with them, while subclasses like FloodEmergency or FireEmergency handle specific behaviors.
@@ -22,7 +23,7 @@ II. **APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
      Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (example: "Flood"), the system creates an instance of the corresponding subclass (FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
 
 
- FILE DESCRIPTION
+ **FILE DESCRIPTION**
  -> Emergency.java
      This is the base class that establishes the common structure for all emergency types. It contains shared attributes such as the user's name and location. Additionally, it defines two abstract methods:
      handleEmergency(): This method is implemented by subclasses to provide customized responses for each specific emergency type.
