@@ -11,10 +11,12 @@ II. **APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
 The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
 
  -> **Encapsulation**
+
 Encapsulation is used to bundle the system's data (attributes like name, location, emergency type) and the methods (functions like handling emergencies) together within classes. This approach hides the internal complexities of the system from external components, which improves the maintainability and security of the system. For example, the Emergency class encapsulates the common properties of all emergency types, providing methods to interact with them, while subclasses like FloodEmergency or FireEmergency handle specific behaviors.
 
  -> **Inheritance**
-     Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
+
+   Inheritance allows subclasses to inherit attributes and methods from a parent class, making the system flexible and reducing code duplication. The Emergency class acts as the base class, and all specific emergency types (such as FloodEmergency, FireEmergency, EarthquakeEmergency, MedicalEmergency, and CrimeEmergency) inherit its attributes and methods. Each subclass can then extend or override the inherited methods to implement behavior specific to the emergency type.
 
 -> **Abstraction**
      Abstraction simplifies the interface and hides the complex logic of handling different types of emergencies. The Emergency class defines an abstract handleEmergency() method, which each subclass implements according to the specifics of the emergency. This allows the system to interact with all emergencies using a uniform interface, without needing to understand the details of each emergency type.
