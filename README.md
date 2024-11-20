@@ -54,17 +54,17 @@ Open the PASPAS folder in your preferred Integrated Development Environment (IDE
 
 Make sure the Java files are properly imported and recognized by your IDE.
 
-4.*Compile the Program*:
+4. *Compile the Program*:
 
 Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
 
-5.*Run the Program*:
+5. *Run the Program*:
 
 In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
 
 The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
 
-6.*Interacting with the Program*:
+6. *Interacting with the Program*:
 
  1.Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
 
