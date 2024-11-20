@@ -45,34 +45,36 @@ PASPAS helps communities prepare for disasters, whether from nature or human cau
 A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
 
 # **IV. INSTRUCTION FOR RUNNING THE PROGRAM**
-1. *Download the Project*: Clone or download the PASPAS files.
+1. *Download the Project*:
+ Clone or download the PASPAS files.
 
-2. *Install Java*: Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
+2. *Install Java*:
+ Ensure that Java is installed on your machine. The system is developed using Java, so you need a Java Development Kit (JDK) installed.
 
 3. *Set Up the Project*:
-Open the PASPAS folder in your preferred Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code.
+ Open the PASPAS folder in your preferred Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code.
 
-Make sure the Java files are properly imported and recognized by your IDE.
+ Make sure the Java files are properly imported and recognized by your IDE.
 
 4. *Compile the Program*:
 
-Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
+ Compile the Java files to check for any errors. Most IDEs will automatically do this for you when opening the project.
 
 5. *Run the Program*:
 
-In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
+ In your IDE, run the EmergencyGUI.java file. This is the main user interface that will open when the program is executed.
 
-The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
+ The GUI will prompt the user to select an emergency type, enter their name, location, and additional information, and simulate an emergency response.
 
 6. *Interacting with the Program*:
 
- 1.Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
+   1.Select the type of emergency from the dropdown menu (e.g., Fire, Crime, Flood, etc.).
 
- 2.Enter your name, location, and any additional information.
+   2.Enter your name, location, and any additional information.
 
- 3.Click "Submit" to trigger the emergency response.
+   3.Click "Submit" to trigger the emergency response.
 
- 4.The system will simulate tracking the user's location and provide emergency-specific reminders.
+   4.The system will simulate tracking the user's location and provide emergency-specific reminders.
 
 # **FILE DESCRIPTION**
 
