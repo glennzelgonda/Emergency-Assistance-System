@@ -5,7 +5,7 @@ PASPAS: Emergency Response System is a Java-based application, specifically desi
 
 In today's world, especially in our country Philippines, we are experiencing severe calamities, disasters, and crimes or tragedies that cause panic and fear among people. PASPAS is built to address this pressing issue by offering quick assistance during such stressfull moments. This system is created to lessen the stress and confusion often associated with seeking help in crises, particularly for individuals who may be feling panicked or unsure about where to turn for assistance. It effectively addresses commmon challenge of not knowing which emergency hotline to dial, streamlining their path to receiving the help they need without unnecessary delays.
 
-PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the raoid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
+PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the rapid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
 
 # **II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
 
@@ -173,9 +173,9 @@ These subclasses extend the Emergency class, each representing a distinct type o
 - reminderArea: Shows emergency-specific reminders or safety tips.
      
 
-# **Workflow in EmergencyGUI.java**:
+# **Workflow in EmergencyGUI.java**
 
--> *User Input Validation*:
+-> *User Input Vsalidation*:
 
 - If the name or location fields are empty, an error message prompts the user to fill in the necessary information:
 
