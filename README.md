@@ -6,6 +6,7 @@ PASPAS: Emergency Response System is a Java-based application, specifically desi
 In today's world, especially in our country Philippines, we are experiencing severe calamities, disasters, and crimes or tragedies that cause panic and fear among people. PASPAS is built to address this pressing issue by offering quick assistance during such stressfull moments. This system is created to lessen the stress and confusion often associated with seeking help in crises, particularly for individuals who may be feling panicked or unsure about where to turn for assistance. It effectively addresses commmon challenge of not knowing which emergency hotline to dial, streamlining their path to receiving the help they need without unnecessary delays.
 
 PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the rapid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
+---
 
 # **II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
 
@@ -26,6 +27,7 @@ The PASPAS Emergency Assistance System utilizes the core Object-Oriented Program
 ->**Polymorphism**
 
 - Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (e.g., "Flood"), the system creates an instance of the corresponding subclass (e.g., FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
+---
 
 # **III. ALIGNMENT WITH SUSTAINABLE DEVELOPMENT GOALS (SDGs)**
 
@@ -39,10 +41,10 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
 
 - PASPAS helps communities prepare for disasters, whether from nature or human causes. It provides specific reminders on how to act during emergencies. For example, it advises users to find higher ground during floods or to evacuate safely in case of a fire. This readiness helps save lives and lessen the impact of disasters by ensuring that help arrives quickly.
      
-
 3. Promoting Inclusivity
 
 - A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
+---
 
 # **IV. INSTRUCTION FOR RUNNING THE PROGRAM**
 1. *Download the Project*:
@@ -78,6 +80,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
    - Click "Submit" to trigger the emergency response.
 
    - The system will simulate tracking the user's location and provide emergency-specific reminders.
+---
 
 # **FILE DESCRIPTION**
 
@@ -171,7 +174,7 @@ These subclasses extend the Emergency class, each representing a distinct type o
 - resultArea: Displays confirmation messages and estimated response times.
 
 - reminderArea: Shows emergency-specific reminders or safety tips.
-     
+--- 
 
 # **Workflow in EmergencyGUI.java**
 
@@ -208,7 +211,7 @@ If both fields are empty:
 -> *Display Results*:
 
 - The result areas show emergency-specific responses, reminders, and additional details entered by the user, ensuring the user receives timely and helpful information during the emergency.
-
+---
 
 # **Imports in EmergencyGUI.java**
      
