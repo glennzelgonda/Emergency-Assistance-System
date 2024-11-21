@@ -1,6 +1,6 @@
 ![paspas1](https://github.com/user-attachments/assets/e85d75d2-7430-45a7-a041-1ac6f31f06fd)
 
-# **I. PROJECT OVERVIEW**
+## **I. PROJECT OVERVIEW**
 PASPAS: Emergency Response System is a Java-based application, specifically designed to provide crucial support to individuals amid emergencies. This system connects users to important resources with remarkable speed and efficiency. It empowers users to report a wide array of emergencies, including natural disasters like floods and earthquakes, urgent incidents, fiery blazes, and criminal activities. When users report an emergency, they are promted to provide essential details, such as their name, exact location, and comprehensive description of the situation at hand.
 
 In today's world, especially in our country Philippines, we are experiencing severe calamities, disasters, and crimes or tragedies that cause panic and fear among people. PASPAS is built to address this pressing issue by offering quick assistance during such stressfull moments. This system is created to lessen the stress and confusion often associated with seeking help in crises, particularly for individuals who may be feling panicked or unsure about where to turn for assistance. It effectively addresses commmon challenge of not knowing which emergency hotline to dial, streamlining their path to receiving the help they need without unnecessary delays.
@@ -8,7 +8,7 @@ In today's world, especially in our country Philippines, we are experiencing sev
 PASPAS goes beyond just reporting emergencies; ut stimulates response procedures. This includes tarcking the user's location in real-time and confirming the rapid deployment of assistance to their location. With its intuitive and user-friendly indterface, along with a highly effective workflow, PASPAS aims to ensure that emergency reporting is accessible to everyone, thereby guaranteeing swift and reliable help during the most critical times.
 ---
 
-# **II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
+## **II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**
 
 The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
 
@@ -29,7 +29,7 @@ The PASPAS Emergency Assistance System utilizes the core Object-Oriented Program
 - Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (e.g., "Flood"), the system creates an instance of the corresponding subclass (e.g., FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
 ---
 
-# **III. ALIGNMENT WITH SUSTAINABLE DEVELOPMENT GOALS (SDGs)**
+## **III. ALIGNMENT WITH SUSTAINABLE DEVELOPMENT GOALS (SDGs)**
 
 The PASPAS system supports SDG 11, which aims to create sustainable and safe cities. It specifically helps improve disaster response and community resilience in the following ways:
 
@@ -46,7 +46,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
 - A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
 ---
 
-# **IV. INSTRUCTION FOR RUNNING THE PROGRAM**
+## **IV. INSTRUCTION FOR RUNNING THE PROGRAM**
 1. *Download the Project*:
  
  - Clone or download the PASPAS files.
@@ -82,7 +82,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
    - The system will simulate tracking the user's location and provide emergency-specific reminders.
 ---
 
-# **FILE DESCRIPTION**
+### **FILE DESCRIPTION**
 
 ->*Emergency.java*
 
@@ -176,7 +176,7 @@ These subclasses extend the Emergency class, each representing a distinct type o
 - reminderArea: Shows emergency-specific reminders or safety tips.
 --- 
 
-# **Workflow in EmergencyGUI.java**
+### **Workflow in EmergencyGUI.java**
 
 -> *User Input Vsalidation*:
 
@@ -213,7 +213,7 @@ If both fields are empty:
 - The result areas show emergency-specific responses, reminders, and additional details entered by the user, ensuring the user receives timely and helpful information during the emergency.
 ---
 
-# **Imports in EmergencyGUI.java**
+### **Imports in EmergencyGUI.java**
      
 - In the EmergencyGUI.java file, several Java packages are imported to facilitate the functionality of the user interface. Below is a description of the main imports used in this file:
 
