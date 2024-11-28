@@ -53,7 +53,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
 - A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
 ---
 
-## IV. INSTRUCTION FOR RUNNING THE PROGRAM** 📌
+## IV. INSTRUCTION FOR RUNNING THE PROGRAM 📌
 1. *Download the Project*:
  
  - Clone or download the PASPAS files.
