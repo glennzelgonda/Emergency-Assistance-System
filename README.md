@@ -15,7 +15,7 @@ PASPAS goes beyond just reporting emergencies it stimulates response procedures.
 
 ---
 
-## **II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP)**💻
+## II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP) 💻
 
 The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
 
@@ -36,7 +36,7 @@ The PASPAS Emergency Assistance System utilizes the core Object-Oriented Program
 - Polymorphism enables the same method to behave differently depending on the object that calls it. This allows the system to handle various emergency types in a uniform way, while still providing specialized behavior for each type. When the user selects an emergency type (e.g., "Flood"), the system creates an instance of the corresponding subclass (e.g., FloodEmergency) and calls the appropriate handleEmergency() method. This behavior is determined dynamically at runtime, simplifying emergency handling.
 ---
 
-## **III. ALIGNMENT WITH SUSTAINABLE DEVELOPMENT GOALS (SDGs)**🌏
+## III. ALIGNMENT WITH SUSTAINABLE DEVELOPMENT GOALS (SDGs) 🌏
 
 The PASPAS system supports SDG 11, which aims to create sustainable and safe cities. It specifically helps improve disaster response and community resilience in the following ways:
 
@@ -53,7 +53,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
 - A major challenge in emergencies is making sure everyone can access help, regardless of their background or tech skills. PASPAS is designed to be simple and user-friendly, allowing anyone to navigate it easily. This inclusive approach ensures that more people can request assistance during critical times, particularly in areas where emergency services might be harder to reach. By breaking down barriers, PASPAS empowers individuals to act quickly when they need help.
 ---
 
-## **IV. INSTRUCTION FOR RUNNING THE PROGRAM**📌
+## IV. INSTRUCTION FOR RUNNING THE PROGRAM** 📌
 1. *Download the Project*:
  
  - Clone or download the PASPAS files.
@@ -89,7 +89,7 @@ The PASPAS system supports SDG 11, which aims to create sustainable and safe cit
    - The system will simulate tracking the user's location and provide emergency-specific reminders.
 ---
 
-### **FILE DESCRIPTION**📂
+### FILE DESCRIPTION 📂
 
 ->*Emergency.java*
 
