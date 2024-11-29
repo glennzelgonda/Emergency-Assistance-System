@@ -11,7 +11,7 @@ public class FireEmergency extends Emergency {
     // Overrides the abstract handleEmergency method from the Emergency class.
     @Override
     public String handleEmergency() {
-        return "Emergency Dispatch! Fire response team is on its way to assist " + getName() + 
+        return "Emergency Dispatch! Firefighters is on its way to assist " + getName() + 
                " at " + getLocation() + ". Please stay calm, help is on the way.";
     }
 

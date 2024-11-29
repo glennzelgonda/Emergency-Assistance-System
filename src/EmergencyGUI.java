@@ -13,7 +13,7 @@ public class EmergencyGUI extends JFrame {
     public EmergencyGUI() {
         // Frame settings
         setTitle("PASPAS: Emergency Assistance System");
-        setSize(750, 430);
+        setSize(780, 440);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -21,8 +21,8 @@ public class EmergencyGUI extends JFrame {
         ImageIcon icon = new ImageIcon("C:\\Users\\OOP PROJ\\Emergency Assistance System\\images\\logo.png"); // Replace with your icon file's path
         setIconImage(icon.getImage());
 
-        // Set background color to a calming light blue
-        getContentPane().setBackground(new Color(173, 216, 230));
+        // Set background color to light blue
+        getContentPane().setBackground(new Color(169, 214, 229)); // Light blue
 
         // Title Label
         JLabel titleLabel = new JLabel("P A S P A S", JLabel.CENTER);
@@ -31,7 +31,12 @@ public class EmergencyGUI extends JFrame {
 
         // Input fields and combo box
         nameField = new JTextField(10);
+        nameField.setBackground(Color.WHITE); // Light background for text field
+        nameField.setForeground(Color.DARK_GRAY); // Dark text for contrast
+
         locationField = new JTextField(10);
+        locationField.setBackground(Color.WHITE); // Light background for text field
+        locationField.setForeground(Color.DARK_GRAY); // Dark text for contrast
 
         emergencyTypeCombo = new JComboBox<>();
         emergencyTypeCombo.addItem("Select Emergency Type");
@@ -43,17 +48,20 @@ public class EmergencyGUI extends JFrame {
 
         // Text areas
         additionalInfoArea = new JTextArea(2, 15);
-        additionalInfoArea.setBackground(Color.WHITE);
+        additionalInfoArea.setBackground(Color.WHITE); // Light background for text area
+        additionalInfoArea.setForeground(Color.DARK_GRAY); // Dark text for contrast
 
         resultArea = new JTextArea(3, 30);
         resultArea.setEditable(false);
         resultArea.setBorder(BorderFactory.createTitledBorder("Response"));
-        resultArea.setBackground(Color.WHITE);
+        resultArea.setBackground(Color.WHITE); // Light background for text area
+        resultArea.setForeground(Color.DARK_GRAY); // Dark text for contrast
 
         reminderArea = new JTextArea(3, 30);
         reminderArea.setEditable(false);
         reminderArea.setBorder(BorderFactory.createTitledBorder("Emergency Reminder"));
-        reminderArea.setBackground(Color.WHITE);
+        reminderArea.setBackground(Color.WHITE); // Light background for text area
+        reminderArea.setForeground(Color.DARK_GRAY); // Dark text for contrast
 
         // Buttons
         JButton submitButton = new JButton("Send Request");
@@ -61,7 +69,7 @@ public class EmergencyGUI extends JFrame {
 
         // Input section
         JPanel inputPanel = new JPanel(new GridLayout(4, 2, 5, 5));
-        inputPanel.setBackground(new Color(173, 216, 230));
+        inputPanel.setBackground(new Color(169, 214, 229)); // Light blue background
         inputPanel.add(new JLabel("Name:"));
         inputPanel.add(nameField);
         inputPanel.add(new JLabel("Location:"));
@@ -73,13 +81,13 @@ public class EmergencyGUI extends JFrame {
 
         // Button section
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(new Color(173, 216, 230));
+        buttonPanel.setBackground(new Color(169, 214, 229)); // Light blue background
         buttonPanel.add(submitButton);
         buttonPanel.add(clearButton);
 
         // Response section
         JPanel responsePanel = new JPanel(new GridLayout(2, 1));
-        responsePanel.setBackground(new Color(173, 216, 230));
+        responsePanel.setBackground(new Color(169, 214, 229)); // Light blue background
         responsePanel.add(resultArea);
         responsePanel.add(reminderArea);
 
@@ -191,3 +199,4 @@ public class EmergencyGUI extends JFrame {
         });
     }
 }
+    
