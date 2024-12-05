@@ -17,7 +17,7 @@ PASPAS goes beyond just reporting emergencies it stimulates response procedures.
 
 ## II. APPLICATION OF OBJECT-ORIENTED PROGRAMMING (OOP) 💻
 
-The PASPAS Emergency Assistance System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
+The PASPAS Emergency Response System utilizes the core Object-Oriented Programming (OOP) principles—Encapsulation, Inheritance, Abstraction, and Polymorphism—to create a structured, maintainable, and scalable application that efficiently handles various emergency scenarios.
 
  ->**Encapsulation**
 
