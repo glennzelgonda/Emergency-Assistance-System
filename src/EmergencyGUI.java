@@ -18,7 +18,7 @@ public class EmergencyGUI extends JFrame {
         setLocationRelativeTo(null);
 
         // Set window icon
-        ImageIcon icon = new ImageIcon("C:\\Users\\OOP PROJ\\Emergency Assistance System\\images\\logo.png"); // Replace with your icon file's path
+        ImageIcon icon = new ImageIcon("C:\\Users\\OOP PROJ\\Emergency Assistance System\\images\\logo.png");
         setIconImage(icon.getImage());
 
         getContentPane().setBackground(new Color(169, 214, 229)); 
@@ -194,4 +194,3 @@ public class EmergencyGUI extends JFrame {
         });
     }
 }
-    
